@@ -8,11 +8,11 @@ def mainpage(request):
 
 
 def makeoreder(request):
-    return render(request, 'mainwebsite/makeorder.html.html')
+    return render(request, 'mainwebsite/makeorder.html')
 
 
 def aboutus(request):
-    return render(request, 'mainwebsite/aboutus.html.html')
+    return render(request, 'mainwebsite/aboutus.html')
 
 
 def job(request):
