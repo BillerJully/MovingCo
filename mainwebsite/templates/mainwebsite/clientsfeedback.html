@@ -1,10 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'mainwebsite/base.html' %}
 
-</body>
-</html>
+
+{% block webcontent %}
+    <h1>{{Title}}</h1>
+    <ul>
+    {% for p in feedback %}
+        <li>
+            <h2>{{p.feedback_title}}</h2>
+            <h3>{{p.feedback_author}}</h3>
+            <p>{{p.feedback_text}}</p>
+        <hr>
+        </li>
+    {% endfor %}
+
+    </ul>
+{% endblock %}
